@@ -1,15 +1,11 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- *main - Entry point
- *Return: 1
+ * main - entry point
+ * Return: 1 (Success)
  */
 int main(void)
 {
-int s = strlen("and that piece of art is useful - Dora Korpar, 2015-10-19\n");
-write(2, "and that piece of art is useful - Dora Korpar, 2015-10-19\n", strlen("and that piece of art is useful - Dora Korpar, 2015-10-19\n"));
-Return (1);
-write(2,
-      "and that piece of art is useful - Dora Korpar, 2015-10-19\n",
-      s);
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 return (1);
 }
