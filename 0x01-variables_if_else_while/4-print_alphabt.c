@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - a program that prints the alphabet in lowercase, followed by a new line.
- * Only putchar will be used
+ * main - program that prints the alphabet in lowercase, followed by a new line
+ * Only putchar to be used
  * Return: 0 (Success)
  */
 
