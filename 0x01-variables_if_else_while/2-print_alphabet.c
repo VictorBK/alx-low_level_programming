@@ -1,18 +1,21 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
- * main - a program that prints the alphabet in lowercase, followed by a new line.
- * The only function to be used is putchar
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
+
 {
-int (1 = 'a');
-while (1 <= 'z')
+char alphabet;
+
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-putchar(1);
-1 += 1;
+putchar(alphabet);
 }
+
 putchar('\n');
+
 return (0);
+
 }
