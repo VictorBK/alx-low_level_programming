@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - program to print all possible combinations of two 2-digit numbers
- * only use putchar 8 times
+ * main - program to print all possible combinations of two two-digit numbers
+ * only use putchar eight times
  * Return 0
  */
 int main(void)
