@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - a program that prints all possible different combinations of three digits
+ * main - program to print all possible different combinations of 3 digits
  * only smallest combination
  * Return: 0 (Success)
  */
@@ -26,11 +26,11 @@ if (z1 != 55 || z2 != 56 || z3 != 57)
 putchar(com);
 putchar(32);
 }
-z3 +=1;
+z3 += 1;
 }
-z2 +=1;
+z2 += 1;
 }
-z1 +=1;
+z1 += 1;
 }
 putchar('\n');
 return (0);
