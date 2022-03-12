@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - program that prints all numbers of base 16 in lowercase
- * only use putchar      
+ * only use putchar
  * Return: 0
  */
 int main(void)
@@ -9,7 +9,7 @@ int main(void)
 {
 char b;
 
-for (b =48; b <= 57; b++)
+for (b = 48; b <= 57; b++)
 {
 putchar(b);
 }
