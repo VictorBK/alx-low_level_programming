@@ -4,7 +4,6 @@
  * only use putchar eight times
  * Return 0
  */
-
 int main(void)
 {
 int c1 = 48;
