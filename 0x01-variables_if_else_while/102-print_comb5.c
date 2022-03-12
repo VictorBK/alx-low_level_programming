@@ -2,7 +2,7 @@
 /**
  * main - program to print all possible combinations of two two-digit numbers
  * only use putchar eight times
- * Return 0
+ * Return: 0
  */
 int main(void)
 {
