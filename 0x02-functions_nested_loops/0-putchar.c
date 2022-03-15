@@ -1,8 +1,8 @@
-#include "_putchar.h"
+#include "main.h"
 
 /**
  * main - program that prints _putchar
- * 
+ *
  * Return: int
  */
 
@@ -17,3 +17,4 @@ x += 1;
 }
 _putchar('\n');
 return (0);
+}
