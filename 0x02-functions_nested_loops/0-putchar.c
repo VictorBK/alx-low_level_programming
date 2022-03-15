@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * main - program that prints _putchar
- *
- * Return: int
+ * main - program to print _putchar
+ * 
+ * Return: 0
  */
 
 int main(void)
 {
-int x = 0;
-char str_ptc[8] = "_putchar";
-while (x < 8)
+char *s = "_putchar";
+while (*s != '\0')
 {
-_putchar(str_ptc[x]);
-x += 1;
+_putchar(*s);
+s++;
 }
 _putchar('\n');
 return (0);
