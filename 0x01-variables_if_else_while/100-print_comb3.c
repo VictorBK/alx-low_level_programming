@@ -1,31 +1,30 @@
 #include <stdio.h>
 /**
- * main - program for all possible different combinations of two digits
- *
- * Return: 0 (success)
+ * main - program for all possible different combination of two digits
+ * putchar only 5 times
+ * Return: 0
  */
 int main(void)
 {
-int d1 = 48;
-int d2;
-int com = 44;
-while (d1 <= 57)
+int n1 = 48;
+int n2;
+int comb = 44;
+while (n1 <= 57)
 {
-d2 = d1 + 1;
-while (d2 <= 57)
+n2 = n1 + 1;
+while (n2 <= 57)
 {
-putchar(d1);
-putchar(d2);
-if (d1 != 56 || d2 != 57)
+putchar(n1);
+putchar(n2);
+if (n1 != 56 || n2 != 57)
 {
-putchar(com);
+putchar(comb);
 putchar(32);
 }
-d2 += 1;
+n2 += 1;
 }
-d1 += 1;
+n1 += 1;
 }
 putchar('\n');
-
 return (0);
 }

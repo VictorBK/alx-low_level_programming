@@ -1,27 +1,18 @@
 #include <stdio.h>
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line
- * Only putchar to be used
- * Return: 0 (Success)
+ * lowercase alphabet except q and e
+ * only use putchar twice
+ * Return: 0
  */
-
 int main(void)
 {
-char n;
-
-for (n = 'a'; n <= 'z'; n++)
+char c = 'a';
+while (c <= 'z')
 {
-if (n == 'q')
-continue;
-
-else if (n == 'e')
-continue;
-
-putchar(n);
+if (c != 'q' && c != 'e')
+putchar(c);
+c++;
 }
-
 putchar('\n');
-
 return (0);
-
 }

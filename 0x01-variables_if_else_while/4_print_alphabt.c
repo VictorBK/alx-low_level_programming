@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - program for alphabet in lower then upper case
- * only use putchar thrice
+ * main - lowercase alphabet except q and e
+ * only use putchar twice
  * Return: 0
  */
 int main(void)
@@ -9,12 +9,7 @@ int main(void)
 char c = 'a';
 while (c <= 'z')
 {
-putchar(c);
-c++;
-}
-c = 'A';
-while (c <= 'Z')
-{
+if (c != 'q' && c != 'e')
 putchar(c);
 c++;
 }

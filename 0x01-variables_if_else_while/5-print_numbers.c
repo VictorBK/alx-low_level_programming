@@ -1,22 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - program to print all single digit numbers of base 10 starting from 0
- * All code to be in main function
+ * main - program for single digit numbers of base 10 from 0
+ * all code in main function
  * Return: 0
  */
 int main(void)
-
 {
-int x;
-
-for (x = 0 ; x < 10; x++)
+int n;
+for  (n = 0; n < 10; n++)
 {
-printf("%x", x);
+printf("%i", n);
 }
-
-printf("\n");
-
+putchar('\n');
 return (0);
-
 }
