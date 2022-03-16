@@ -14,7 +14,7 @@ long int x1, x2, fn, fn2, x11, x22;
 x1 = 1;
 x2 = 2;
 boolean = boolean2 = 1;
-printf("%1d, %1d", x1, x2);
+printf("%ld, %ld", x1, x2);
 for (c = 0; c < 96; c++)
 {
 if (boolean)
