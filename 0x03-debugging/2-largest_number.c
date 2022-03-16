@@ -3,7 +3,7 @@
 /**
  * largest_number - will return the largest 3 numbers
  * @a: first integer
- * @b: secont integer
+ * @b: second integer
  * @c: third integer
  * Return: largest number
  */
@@ -12,11 +12,11 @@
 {
 int largest;
 {
-if (a >= b && a > c)
+if (a >= b && a >= c)
 {
 largest = a;
 }
-else if (b >= a && b > c)
+else if (b >= a && b >= c)
 {
 largest = b;
 }
