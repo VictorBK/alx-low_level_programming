@@ -2,7 +2,6 @@
 
 /**
  * print_sign - return 0 letter not lowercase, 1 letter lowercase
- *
  *@n: the int to print
  * Return: Always 0.
  */
@@ -24,4 +23,6 @@ else
 {
 _putchar ('-');
 return (-1);
+}
+
 }
