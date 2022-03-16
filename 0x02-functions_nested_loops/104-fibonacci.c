@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int c, boolean, boleean2;
+int c, boolean, boolean2;
 long int x1, x2, fn, fn2, x11, x22;
 
 x1 = 1;
