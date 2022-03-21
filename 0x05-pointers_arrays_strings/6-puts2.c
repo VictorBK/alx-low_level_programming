@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void puts2(cha *str)
+void puts2(char *str)
 {
 int i = 0;
 
