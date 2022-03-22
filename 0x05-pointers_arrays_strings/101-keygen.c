@@ -3,61 +3,34 @@
 #include <time.h>
 
 /**
- * randomPasswordGeneration - program that generates random valind passwords
- * The passwords are for the program 101-crackme
- * man srand, rand, time
- * gdb and objdump can help
- * Return: 0 (Success)
+ * main – program to generate random valid passwords
+ *
+ * Return: 0
  */
 
-void randomPasswordGeneration(int P)
+int main(void)
 {
-int x = 0;
-int random = 0;
+char x[300];
+int num = 0;
+int randomizer = 0;
+char *key = x;
 
-srand((unsigned int)(time(NULL)));
+srand(time(NULL));
 
-char numbers[] = "0123456789";
-char letter[] = "abcdefghijklmnopqrstuvwxyz";
-char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char symbols[] = "£$%^&*?#~!";
-char password[P];
-random = rand() %4;
+while (num < 3000)
+{
+randomizer = rand() % 122;
 
-for (x = 0; x < P; x++)
+if (randomizer > 32)
 {
-if (random == 1)
-{
-password[x] = numbers[rand() % 10];
-random = rand() %4;
-printf("%c", password[x]);
-}
-else if (random == 2)
-{
-password[x] = symbols[rand() % 10];
-random = rand() %4;
-printf("%c", password[x]);
-}
-else if (random == 3)
-{
-password[x] = LETTER[rand() % 26];
-random = rand() %4;
-printf("%c", password[x]);
-}
-else
-{
-password[x] = letter[rand() % 26];
-random = rand() %4;
-printf("%c", password[x]);
-}
+*key = randomizer;
+key = key + 1;
+num += randomizer;
 }
 }
 
-int main()
-{
-int P = 10;
-
-randomPasswordGeneration(P);
-
+*key = (2772 - num);
+*(key + 1) = '\n';
+printf("%s", x);
 return (0);
 }
