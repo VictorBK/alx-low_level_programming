@@ -17,7 +17,7 @@ char *key = x;
 
 srand(time(NULL));
 
-while (num < 3000)
+while (num < 2650)
 {
 randomizer = rand() % 122;
 
