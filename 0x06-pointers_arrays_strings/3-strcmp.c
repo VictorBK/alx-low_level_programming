@@ -15,6 +15,7 @@ int a;
 int output;
 
 a = 0;
+
 while (*(s1 + a) == *(s2 + a) && *(s1 + a) != '\0')
 a++;
 

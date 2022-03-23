@@ -26,7 +26,9 @@ while (*(src + x) != *(src + n))
 *(dest + y) = *(src + x);
 x++;
 y++;
+
 }
 *(dest + y) = '\0';
+
 return (dest);
 }
