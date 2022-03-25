@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- *_strncat - function that concantenates two strings
- *@dest: pointer to character to be changed
- *@src: pointer to character to be changed
+ *_strncat - concatenates two strings
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will be changed
  *@n: value
  *Return: dest
  */
@@ -11,23 +10,23 @@
 char *_strncat(char *dest, char *src, int n)
 
 {
-int x,y;
+int i, j;
 
-x = 0;
-while (dest[x] != '\0')
+i = 0;
+while (dest[i] != '\0')
 {
-x++;
+i++;
 }
 
-y = 0;
-while (y < n && src[y] != '\0')
+j = 0;
+while (j < n && src[j] != '\0')
 {
-dest[x] = src[y];
-y++;
-x++;
+dest[i] = src[j];
+j++;
+i++;
 }
 
-dest[x] = '\0';
+dest[i] = '\0';
 
 return (dest);
 }
