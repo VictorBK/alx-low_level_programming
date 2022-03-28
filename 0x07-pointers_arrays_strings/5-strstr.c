@@ -20,10 +20,10 @@ while (*haystack != '\0')
 h = haystack;
 n = needle;
 
-while (*haystack != '\0' && *needle != '\0' && *haystack == *needle)
+while (*haystack != '\0' && *n != '\0' && *haystack == *n)
 {
 haystack++;
-needle++;
+n++;
 }
 if (!*n)
 return (h);
