@@ -9,22 +9,22 @@
 int is_palindrome(char *s)
 {
 int length;
-length = det_length(s) - 1;
+length = get_length(s) - 1;
 return (my_pal(s, --length));
 }
 
 /**
- * det_length - determines length of a string
+ * get_length - determines length of a string
  * s: string
  * Return: length of string
  */
 
-int det_length(char *s)
+int get_length(char *s)
 {
 if (*s == '\0')
 return (1);
 else
-return (1 + det_length(++s));
+return (1 + get_length(++s));
 }
 
 /**
