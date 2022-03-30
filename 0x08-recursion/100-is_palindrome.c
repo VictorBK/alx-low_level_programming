@@ -15,7 +15,7 @@ return (my_pal(s, --length));
 
 /**
  * get_length - determines length of a string
- * s: string
+ * @s: string
  * Return: length of string
  */
 
