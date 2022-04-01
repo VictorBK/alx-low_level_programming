@@ -12,12 +12,13 @@
 int main(int argc, char *argv[])
 {
 int x, y, sum;
+
 sum = 0;
 
 if (argc < 2)
 {
 printf("0\n");
-return(0);
+return (0);
 }
 for (x = 1; x < argc; x++)
 {
