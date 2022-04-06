@@ -4,8 +4,8 @@
 
 /**
  * get_nwords - get the number of space separated words in `s'
- * @s: string 
- * 
+ * @s: string
+ *
  * Return: number of words in `s'
  */
 int get_nwords(char *s)
