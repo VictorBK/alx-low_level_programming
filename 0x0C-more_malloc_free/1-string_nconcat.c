@@ -8,39 +8,38 @@
  * @n: maximum number of s2 bytes to concantenate to s1
  * Return: a string concantenated
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a, b;
+	unsigned int i, j;
 	char *p;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 
-	for (a = 0; s1[a] != '\0'; a++)
+	for (i = 0; s1[i] != '\0'; i++)
 		;
 
-	for (b = 0; s2[b] != '\0'; b++)
+	for (j = 0; s2[j] != '\0'; j++)
 		;
 
-	if (n >= b)
-		n = b;
+	if (n >= j)
+		n = j;
 
-	p = malloc(sizeof(char) * (a + n + 1));
+	p = malloc(sizeof(char) * (i + n + 1));
 
 	if (p == NULL)
 		return (NULL);
 
-	for (a = 0; s1[a] != '\0'; a++)
-		p[a] = s1[a];
+	for (i = 0; s1[i] != '\0'; i++)
+		p[i] = s1[i];
 
-	for (b = 0; b < n; b++, a++)
-		p[a] = s2[b];
+	for (j = 0; j < n; j++, i++)
+		p[i] = s2[j];
 
-	p[a] = '\0';
+	p[i] = '\0';
 
 	return (p);
 }
