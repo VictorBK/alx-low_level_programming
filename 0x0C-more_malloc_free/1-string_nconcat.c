@@ -6,8 +6,7 @@
  * @s1: input string 1
  * @s2: input string 2
  * @n: maximum number of s2 bytes to concantenate to s1
- * Return: NULL if function fails
- * Otherwise, return pointer to concatenated space in memory
+ * Return: a string concantenated
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
