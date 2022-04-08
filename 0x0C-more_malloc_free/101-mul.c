@@ -4,9 +4,9 @@
 
 /**
  * main - Program that mulplies two positive numbers
- * @argc: Number of argumenets
+ * @argc: Number of arguments
  * @argv: Muldimensional array of arguments
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(int argc, char **argv)
 {
@@ -46,7 +46,7 @@ int main(int argc, char **argv)
  * _calloc - Function that allocates memory for an array
  * @nmemb: Elements of array
  * @size: Size of data type
- * Return: Void
+ * Return: void
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -70,7 +70,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 /**
  * _strlen - Function that calculates the length of a string
  * @s: String to be checked
- * Return: The lengtht of string or -1 if it fails
+ * Return: length of string or -1 if it fails
  */
 int _strlen(char *s)
 {
@@ -89,7 +89,7 @@ int _strlen(char *s)
  * big_mult - Function that multiplies two big numbers
  * @s1: String big number 1
  * @s2: String big number 2
- * Return: a result of the two big numbers
+ * Return: result of the two big numbers
  */
 char *big_mult(char *s1, char *s2)
 {
