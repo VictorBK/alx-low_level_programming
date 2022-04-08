@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
 	char x[15000];
-	char *n = x;
+	char *n = b;
 	int i, j;
 
 	if (argc != 3)
@@ -44,11 +44,12 @@ int main(int argc, char **argv)
 }
 
 /**
- * _calloc - Function that allocates memory for an array
+ * _calloc - allocates memory for an array
  * @nmemb: Elements of array
  * @size: Size of data type
- * Return: Void
+ * Return: void
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
@@ -71,7 +72,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 /**
  * _strlen - calculates the length of a string
  * @s: String to be checked
- * Return: The lengtht of string or -1 if it fails
+ * Return: The length of string or -1 if it fails
  */
 
 int _strlen(char *s)
