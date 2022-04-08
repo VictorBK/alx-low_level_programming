@@ -11,7 +11,7 @@
 
 int main(int argc, char **argv)
 {
-	char x[15000];
+	char b[15000];
 	char *n = b;
 	int i, j;
 

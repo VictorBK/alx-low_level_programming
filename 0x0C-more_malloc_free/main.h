@@ -10,5 +10,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *big_mult(char *s1, char *s2);
 int main(int argc, char **argv);
 int _strlen(char *s);
+void *_calloc(unsigned int nmemb, unsigned int size);
 
 #endif
