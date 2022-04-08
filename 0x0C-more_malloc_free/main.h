@@ -11,5 +11,7 @@ char *big_mult(char *s1, char *s2);
 int main(int argc, char **argv);
 int _strlen(char *s);
 void *_calloc(unsigned int nmemb, unsigned int size);
+int is_digit(char *s)
+void errors(void)
 
 #endif
