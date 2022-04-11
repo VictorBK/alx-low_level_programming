@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function that prints current filename to std output
- * 
+ * main - function to print current filename to std output
  * Return: 0 (success)
  */
 
