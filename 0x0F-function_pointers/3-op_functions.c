@@ -32,7 +32,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - division
+ * op_div - divide
  * @a: integer
  * @b: integer
  * Return: result
@@ -43,7 +43,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - modulo
+ * op_mod - modulus for remainder
  * @a: integer
  * @b: integer
  * Return: result
