@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 
 /**
  * print_listint - prints all elements of a list_t list
- * @h: header pointer
+ * @h: pointer to the first element
  * Return: the number of nodes
  */
 
@@ -15,7 +13,10 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%i\n", h->n);
+		if (h->n == '\0')
+			printf("[0] (nil)\n");
+		else
+			printf("%d\n", h->n);
 		h = h->next;
 		count++;
 	}
