@@ -4,7 +4,7 @@
 
 /**
  * print_listint - prints all elements of a list_t list
- * @h: pointer to the first element
+ * @h: linked list
  * Return: the number of nodes
  */
 
