@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <string.h>
 
 /**
  * _ra - reallocates memory for an array of pointers
